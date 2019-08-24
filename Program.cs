@@ -70,7 +70,7 @@ namespace DataStructure
                              break;
                     case 12: AnagramUsingQueue aq = new AnagramUsingQueue();
                              aq.PrimeAnagarm();
-                            // aq.ReadingData();
+                             aq.ReadingData();
                              break;
 
                 }

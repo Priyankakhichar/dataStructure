@@ -1,4 +1,10 @@
-﻿
+﻿//-------------------------------------------------------------------------------------------------------------------------------
+//<copyright file = "AnagramUsingQueue.cs" company ="Bridgelabz">
+//Copyright © 2019 company ="Bridgelabz"
+//</copyright>
+//<creator name ="Priyanka khichar"/>
+//
+//---------------------------------------------------------------------------------------------
 namespace DataStructure
 {
     using System;

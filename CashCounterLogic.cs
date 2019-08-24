@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace DataStructure
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     class CashCounterLogic
     {
         static public Node first, last;

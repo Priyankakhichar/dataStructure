@@ -1,9 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿//-------------------------------------------------------------------------------------------------------------------------------
+//<copyright file = "AnagramUsingQueue.cs" company ="Bridgelabz">
+//Copyright © 2019 company ="Bridgelabz"
+//</copyright>
+//<creator name ="Priyanka khichar"/>
+//
+//------
 namespace DataStructure
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     class AnagramUsingQueue
     {
         int[] prime = new int[1000];
@@ -26,7 +32,6 @@ namespace DataStructure
                     newPrime[k++] = prime[i];
                 }
             }
-            Console.WriteLine(string.Join(" ", newPrime));
             //condition for checking anagram
             for (int i = 0; i < k; i++)
             {
@@ -34,17 +39,17 @@ namespace DataStructure
                 {
                     if (newPrime[i] != 0)
                     {
-                        string str1 = newPrime[i].ToString();
-                        string str2 = newPrime[j].ToString();
-                        if (str1.Length == str2.Length)
+                        string firstElement = newPrime[i].ToString();
+                        string secondElement = newPrime[j].ToString();
+                        if (firstElement.Length == secondElement.Length)
                         {
-                            char[] c1 = str1.ToCharArray();
-                            char[] c2 = str2.ToCharArray();
-                            Array.Sort(c1);
-                            Array.Sort(c2);
-                            str1 = new string(c1);
-                            str2 = new string(c2);
-                            if (str1.Equals(str2))
+                            char[] charArray1 = firstElement.ToCharArray();
+                            char[] charArray2 = secondElement.ToCharArray();
+                            Array.Sort(charArray1);
+                            Array.Sort(charArray2);
+                            firstElement = new string(charArray1);
+                            secondElement = new string(charArray2);
+                            if (firstElement.Equals(secondElement))
                             {
                                 queue.Enqueue(newPrime[i]);
                             }
